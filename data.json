@@ -1,0 +1,229 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Amit",
+      "email": "employee1@example.com",
+      "password": "123",
+      "taskCount": {
+        "active": 1,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 1
+      },
+      "tasks": [
+        {
+          "active": true,
+          "newTask": true,
+          "completed": false,
+          "failed": false,
+          "taskTitle": "Update website",
+          "taskDescription": "Revamp the homepage design",
+          "taskDate": "2024-10-12",
+          "category": "Design"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": true,
+          "failed": false,
+          "taskTitle": "Client meeting",
+          "taskDescription": "Discuss project requirements",
+          "taskDate": "2024-10-10",
+          "category": "Meeting"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": false,
+          "failed": true,
+          "taskTitle": "Bug fixing",
+          "taskDescription": "Fix login page issue",
+          "taskDate": "2024-10-08",
+          "category": "Development"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Rahul",
+      "email": "employee2@example.com",
+      "password": "123",
+      "taskCount": {
+        "active": 1,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 1
+      },
+      "tasks": [
+        {
+          "active": true,
+          "newTask": true,
+          "completed": false,
+          "failed": false,
+          "taskTitle": "API Integration",
+          "taskDescription": "Integrate payment gateway",
+          "taskDate": "2024-10-13",
+          "category": "Backend"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": true,
+          "failed": false,
+          "taskTitle": "Code Review",
+          "taskDescription": "Review team pull requests",
+          "taskDate": "2024-10-09",
+          "category": "Review"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": false,
+          "failed": true,
+          "taskTitle": "Deployment",
+          "taskDescription": "Deploy app to production",
+          "taskDate": "2024-10-07",
+          "category": "DevOps"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Priya",
+      "email": "employee3@example.com",
+      "password": "123",
+      "taskCount": {
+        "active": 1,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 1
+      },
+      "tasks": [
+        {
+          "active": true,
+          "newTask": true,
+          "completed": false,
+          "failed": false,
+          "taskTitle": "UI Testing",
+          "taskDescription": "Test dashboard UI",
+          "taskDate": "2024-10-14",
+          "category": "Testing"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": true,
+          "failed": false,
+          "taskTitle": "Documentation",
+          "taskDescription": "Update API documentation",
+          "taskDate": "2024-10-09",
+          "category": "Documentation"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": false,
+          "failed": true,
+          "taskTitle": "Performance Fix",
+          "taskDescription": "Optimize database queries",
+          "taskDate": "2024-10-06",
+          "category": "Optimization"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "Neha",
+      "email": "employee4@example.com",
+      "password": "123",
+      "taskCount": {
+        "active": 1,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 1
+      },
+      "tasks": [
+        {
+          "active": true,
+          "newTask": true,
+          "completed": false,
+          "failed": false,
+          "taskTitle": "Mobile UI",
+          "taskDescription": "Improve mobile responsiveness",
+          "taskDate": "2024-10-15",
+          "category": "Frontend"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": true,
+          "failed": false,
+          "taskTitle": "Sprint Planning",
+          "taskDescription": "Plan next sprint tasks",
+          "taskDate": "2024-10-11",
+          "category": "Planning"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": false,
+          "failed": true,
+          "taskTitle": "Server Setup",
+          "taskDescription": "Configure staging server",
+          "taskDate": "2024-10-05",
+          "category": "Infrastructure"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "firstName": "Suresh",
+      "email": "employee5@example.com",
+      "password": "123",
+      "taskCount": {
+        "active": 1,
+        "newTask": 1,
+        "completed": 1,
+        "failed": 1
+      },
+      "tasks": [
+        {
+          "active": true,
+          "newTask": true,
+          "completed": false,
+          "failed": false,
+          "taskTitle": "Analytics Setup",
+          "taskDescription": "Integrate Google Analytics",
+          "taskDate": "2024-10-16",
+          "category": "Analytics"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": true,
+          "failed": false,
+          "taskTitle": "Email Templates",
+          "taskDescription": "Design email notifications",
+          "taskDate": "2024-10-10",
+          "category": "Design"
+        },
+        {
+          "active": false,
+          "newTask": false,
+          "completed": false,
+          "failed": true,
+          "taskTitle": "Data Migration",
+          "taskDescription": "Migrate old user data",
+          "taskDate": "2024-10-04",
+          "category": "Database"
+        }
+      ]
+    }
+  ],
+  "admin": {
+    "id": 1,
+    "email": "admin@example.com",
+    "password": "123"
+  }
+}
