@@ -6,19 +6,21 @@ import { getLocalStorage, setLocalStorage } from './utils/localStorage'
 import { AuthContext } from './context/AuthProvider'
 
 const App = () => {
-
+  
   const [user, setUser] = useState(null)
   const [loggedInUserData, setLoggedInUserData] = useState(null)
   const authData = useContext(AuthContext)
   console.log(authData)
 
-  // useEffect(() => {
-  //   const loggedInUser = localStorage.getItem("LoggedInUser")
-  //   if(loggedInUser){
-  //     setUser(loggedInUser.role)
-  //   }
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("LoggedInUser")
+    if(loggedInUser){
+      const userData = JSON.parse(loggedInUser)
+      setUser(userData.role)
+      setLoggedInUserData(userData.data)
+    }
   
-  // }, [authData])
+  }, [])
   
 
   const handelLogin = (email , password) => {
@@ -30,7 +32,7 @@ const App = () => {
       if (employee) {
         setUser('employees')
         setLoggedInUserData(employee)
-        localStorage.setItem('loggedInUser', JSON.stringify({role : 'employee'}))
+        localStorage.setItem('loggedInUser', JSON.stringify({role : 'employee', data:employee}))
       }
     }else{
       alert('Invaid Credential')
