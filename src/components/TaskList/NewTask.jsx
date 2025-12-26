@@ -1,18 +1,18 @@
 import React from 'react'
 
-const NewTask = () => {
+const NewTask = ({data}) => {
   return (
     <div className="h-full flex-shrink-0 w-[320px] p-5 bg-amber-400 rounded-xl ">
       <div className="flex justify-between items-center">
-        <h3 className="bg-red-300 px-3 text-sm py-1 rounded">{data.category}</h3>
-        <h4 className="text-sm">{data.taskDate}</h4>
+        <h3 className="bg-red-300 px-3 text-sm py-1 rounded">{data?.category}</h3>
+        <h4 className="text-sm">{data?.taskDate}</h4>
       </div>
-      <h2 className="text-2xl font-semibold mt-5">Make youtube a video</h2>
+      <h2 className="text-2xl font-semibold mt-5">{data?.taskTitle}</h2>
       <p className="text-sm mt-2">
-        {data.taskDescription}
+        {data?.taskDescription}
       </p>
       <div className="mt-4">
-        <button className="w-full ">Accept Task</button>
+        <button onClick={onAccept} className="w-full bg-amber-700 hover:bg-amber-800 text-white py-2 rounded-md transition">Accept Task</button>
       </div>
     </div>
   )

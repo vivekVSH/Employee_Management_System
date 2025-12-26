@@ -11,7 +11,7 @@ const CompleteTask = ({data}) => {
       <p className="text-sm mt-2">{data.taskDescription}
       </p>
       <div className="mt-2">
-        <button className="w-full ">Completed Task</button>
+        <button className="w-full bg-green-700 text-white py-2 rounded-md">Completed</button>
       </div>
     </div>
   )
